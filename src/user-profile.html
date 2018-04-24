@@ -9,7 +9,7 @@
   <title>Fakebook Profile</title>
 </head>
 <body>
-  
+
   <!-- top nav bar area -->
   <nav>
     <span id="logo">Fakebook</span>
@@ -22,51 +22,26 @@
 
     <img src="images/ic_account_box_black_24dp_2x.png" alt="">
     <i class="material-icons">keyboard_arrow_down</i>
+    <!-- <div class="dropdown">
+      <div>Edit Profile</div>
+      <div>Logout</div>
+    </div> -->
   </nav>
 
   <!-- main section -->
-  <div>
-    <img src="" alt="">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="images/ic_account_box_black_24dp_2x.png" alt="">
+      <h2>Firstname Lastname</h2>
+      <div>About me</div>
+      <div>Contact Info</div>
+      <button>See Friends</button>
+    </div>
+    <div class="col-md-9">
+      <button>Create a post</button>
 
-    <div>
-      <h3>Create an account</h3>
-      <h4>(We cant promise it will always be free ;-)</h4>
+      <!-- Posts Partial -->
 
-      <form>
-          <div>
-            <input type="text" placeholder="firstname" required>
-            <input type="text" placeholder="lastname" required>
-          </div>
-          <div>
-            <input type="email" placeholder="email" required>
-          </div>
-          <div>
-            <input type="password" placeholder="password" required>
-          </div>
-          <div>
-            <input type="password" placeholder="confirm password" required>
-          </div>
-          <div>
-            <span>Gender</span>
-            <div>
-              <label for="male">Male</label>
-              <input type="radio" name="gender">
-            </div>
-            <div>
-              <label for="female">Female</label>
-              <input type="radio" name="gender">
-            </div>
-            <div>
-              <label for="unspecified">Unspecified</label>
-              <input type="radio" name="gender">
-            </div>
-          </div>
-          <div>
-            <label for="dob">Date of Birth</label>
-            <input type="date">
-          </div>
-          <button type="submit">Sign Up</button>
-      </form>
     </div>
   </div>
 
