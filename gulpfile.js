@@ -11,7 +11,7 @@ gulp.task('serve', () => {
       server: "public"
   });
 
-  gulp.watch("src/index.html", ['html']);
+  gulp.watch("src/*.html", ['html']);
   gulp.watch("src/scss/**/*.scss", ['sass']);
   gulp.watch("public/*.html").on('change', browserSync.reload);
 });
@@ -33,7 +33,7 @@ gulp.task('images', () =>
 
 // Browser Sync
 gulp.task('html', function(){
-  gulp.src('src/index.html')
+  gulp.src('src/*.html')
     .pipe(gulp.dest('public'))
     .pipe(browserSync.stream());
 });
