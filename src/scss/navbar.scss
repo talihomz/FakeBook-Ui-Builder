@@ -1,0 +1,27 @@
+nav {
+  background: $facebook-blue;
+
+  #logo {
+    margin-top: 24px;
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .navbar-right {
+
+    .form-inline {
+      margin: 16px 0;
+
+      label {
+        display: block;
+        color: $white;
+      }
+
+      .btn {
+        margin-top: 24px;
+      }
+    }
+  }
+}
