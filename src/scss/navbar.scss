@@ -9,6 +9,11 @@ nav {
     display: inline-block;
   }
 
+  .logo-authenticated {
+    margin: 0!important;
+    font-size: 36px!important;
+  }
+
   .navbar-right {
     .form-inline {
       margin: 16px 0;
@@ -20,6 +25,44 @@ nav {
 
       .btn {
         margin-top: 24px;
+      }
+    }
+
+    .navbar-right-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .avatar {
+        width: 48px;
+        height: 48px;
+        margin-right: 4px !important;
+      }
+
+      a {
+        font-weight: bold;
+      }
+
+      * {
+        display: inline-block;
+        margin-right: 16px;
+        color: $white;
+      }
+
+      .dropdown {
+        i {
+          cursor: pointer;
+        }
+
+        .dropdown-item {
+          color: $lightgrey;
+          padding: 8px;
+          width: 100%;
+        }
+
+        #dropdown-content {
+          display: none;
+        }
       }
     }
   }

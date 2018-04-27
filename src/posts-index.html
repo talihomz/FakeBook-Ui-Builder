@@ -18,21 +18,29 @@
 <body>
 
   <!-- top nav bar area -->
-  <nav>
-    <span id="logo">Fakebook</span>
+  <nav class="navbar">
+    <div class="container">
+      <span id="logo" class="logo-authenticated">Fakebook</span>
+      <div class="navbar-right">
+        <div class="navbar-right-links">
+          <a href="#">Find Friends</a>
+          <i class="material-icons">notifications</i>
 
-    <div>
-      <a href="#">Find Friends</a>
+          <img class="avatar" src="images/ic_account_box_black_24dp_2x.png" alt="">
+
+
+          <div class="nav-item dropdown">
+           <i class="material-icons" id="dropdown-toggle">keyboard_arrow_down</i>
+
+           <div id="dropdown-content" class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="#">Action</a>
+             <a class="dropdown-item" href="#">Another action</a>
+             <a class="dropdown-item" href="#">Something else here</a>
+           </div>
+         </div>
+        </div>
+      </div>
     </div>
-    <i class="material-icons">person_add</i>
-    <i class="material-icons">notifications</i>
-
-    <img src="images/ic_account_box_black_24dp_2x.png" alt="">
-    <i class="material-icons">keyboard_arrow_down</i>
-    <!-- <div class="dropdown">
-      <div>Edit Profile</div>
-      <div>Logout</div>
-    </div> -->
   </nav>
 
   <!-- main section -->
@@ -157,6 +165,28 @@
       </div>
     </div>
   </div>
+
+  <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script>
+    const dropdownBtn = document.querySelector('#dropdown-toggle');
+    const dropdownContent = document.querySelector('#dropdown-content');
+
+    dropdownBtn.addEventListener('click', toggleDropdown);
+
+    function toggleDropdown() {
+      if (!dropdownContent.style.display || dropdownContent.style.display === 'none') {
+        dropdownContent.style.display = 'block';
+      } else {
+        dropdownContent.style.display = 'none';
+      }
+    }
+  </script>
 
 </body>
 </html>
